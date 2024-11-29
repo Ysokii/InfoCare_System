@@ -13,6 +13,9 @@ namespace Infocare_Project
 {
     public partial class PatientRegisterForm : Form
     {
+        int houseNo;
+        int zipCode;
+        int zone;
         public PatientRegisterForm()
         {
             InitializeComponent();
@@ -30,6 +33,31 @@ namespace Infocare_Project
 
         private void EnterButton_Click(object sender, EventArgs e)
         {
+
+            // Declare variables to hold the converted values
+            int houseNo;
+            int zipCode;
+            int zone;
+
+            // Try to parse the values from the text boxes into integers
+            if (!int.TryParse(HouseNoTxtbox.Text, out houseNo))
+            {
+                MessageBox.Show("Please enter a valid number for House No.");
+                return; // Stop further execution if conversion fails
+            }
+
+            if (!int.TryParse(ZipCodeTxtbox.Text, out zipCode))
+            {
+                MessageBox.Show("Please enter a valid number for Zip Code.");
+                return; // Stop further execution if conversion fails
+            }
+
+            if (!int.TryParse(ZoneTxtbox.Text, out zone))
+            {
+                MessageBox.Show("Please enter a valid number for Zone.");
+                return; // Stop further execution if conversion fails
+            }
+
             // Create a new User object with all fields, including address components
             User newUser = new User
             {
@@ -44,8 +72,10 @@ namespace Infocare_Project
                 ConfirmPassword = ConfirmPasswordTxtbox.Text,
                 ContactNumber = ContactNumberTxtbox.Text,
 
-                // New Address Components
-                HouseNo = HouseNoTxtbox.Text,
+                // New Address Components (use the parsed integer values)
+                HouseNo = houseNo,
+                ZipCode = zipCode,
+                Zone = zone,
                 Street = StreetTxtbox.Text,
                 Barangay = BarangayTxtbox.Text,
                 City = CityTxtbox.Text
@@ -64,8 +94,6 @@ namespace Infocare_Project
                 Database db = new Database();
                 db.PatientReg1(newUser);
 
-                MessageBox.Show("Registration successful!");
-
                 // Open the PatientBasicInformationForm and pass relevant data
                 var patientInfoForm = new PatientBasicInformationForm(newUser.Username, newUser.FirstName, newUser.LastName);
                 patientInfoForm.Show();
@@ -79,6 +107,5 @@ namespace Infocare_Project
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
     }
 }
