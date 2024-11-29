@@ -60,6 +60,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -67,6 +71,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientRegisterForm));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             EnterButton = new Guna.UI2.WinForms.Guna2Button();
             FirstnameTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -92,11 +103,13 @@
             guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             SexCombobox = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            Mnicipality = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            MinimizeButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            CityTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            BarangayTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            StreetTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            HouseNoTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            ZipCodeTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            ZoneTxtbox = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).BeginInit();
             guna2CustomGradientPanel2.SuspendLayout();
             SuspendLayout();
@@ -129,7 +142,7 @@
             EnterButton.Margin = new Padding(3, 2, 3, 2);
             EnterButton.Name = "EnterButton";
             EnterButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            EnterButton.Size = new Size(102, 40);
+            EnterButton.Size = new Size(177, 46);
             EnterButton.TabIndex = 3;
             EnterButton.Text = "Continue";
             EnterButton.Click += EnterButton_Click;
@@ -148,7 +161,7 @@
             FirstnameTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FirstnameTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
             FirstnameTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            FirstnameTxtbox.Location = new Point(80, 286);
+            FirstnameTxtbox.Location = new Point(66, 285);
             FirstnameTxtbox.Name = "FirstnameTxtbox";
             FirstnameTxtbox.PasswordChar = '\0';
             FirstnameTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
@@ -162,7 +175,7 @@
             // 
             guna2HtmlLabel1.BackColor = Color.FromArgb(13, 41, 80);
             guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel1.ForeColor = Color.FromArgb(93, 202, 209);
+            guna2HtmlLabel1.ForeColor = Color.FromArgb(110, 177, 247);
             guna2HtmlLabel1.Location = new Point(379, 12);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
@@ -196,7 +209,7 @@
             LastNameTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             LastNameTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
             LastNameTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            LastNameTxtbox.Location = new Point(265, 286);
+            LastNameTxtbox.Location = new Point(251, 285);
             LastNameTxtbox.Name = "LastNameTxtbox";
             LastNameTxtbox.PasswordChar = '\0';
             LastNameTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
@@ -215,7 +228,7 @@
             BdayDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             BdayDateTimePicker.ForeColor = Color.Black;
             BdayDateTimePicker.Format = DateTimePickerFormat.Long;
-            BdayDateTimePicker.Location = new Point(292, 438);
+            BdayDateTimePicker.Location = new Point(292, 437);
             BdayDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             BdayDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             BdayDateTimePicker.Name = "BdayDateTimePicker";
@@ -229,7 +242,7 @@
             guna2HtmlLabel4.BackColor = Color.FromArgb(110, 177, 247);
             guna2HtmlLabel4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(13, 41, 80);
-            guna2HtmlLabel4.Location = new Point(292, 416);
+            guna2HtmlLabel4.Location = new Point(292, 415);
             guna2HtmlLabel4.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(60, 19);
@@ -241,7 +254,7 @@
             guna2HtmlLabel5.BackColor = Color.FromArgb(110, 177, 247);
             guna2HtmlLabel5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.FromArgb(13, 41, 80);
-            guna2HtmlLabel5.Location = new Point(536, 416);
+            guna2HtmlLabel5.Location = new Point(536, 415);
             guna2HtmlLabel5.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(24, 19);
@@ -310,7 +323,7 @@
             MiddleNameTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             MiddleNameTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
             MiddleNameTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            MiddleNameTxtbox.Location = new Point(80, 341);
+            MiddleNameTxtbox.Location = new Point(66, 340);
             MiddleNameTxtbox.Name = "MiddleNameTxtbox";
             MiddleNameTxtbox.PasswordChar = '\0';
             MiddleNameTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
@@ -334,7 +347,7 @@
             SuffixTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             SuffixTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
             SuffixTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            SuffixTxtbox.Location = new Point(265, 341);
+            SuffixTxtbox.Location = new Point(251, 340);
             SuffixTxtbox.Name = "SuffixTxtbox";
             SuffixTxtbox.PasswordChar = '\0';
             SuffixTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
@@ -349,7 +362,7 @@
             guna2HtmlLabel6.BackColor = Color.FromArgb(110, 177, 247);
             guna2HtmlLabel6.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel6.ForeColor = Color.FromArgb(13, 41, 80);
-            guna2HtmlLabel6.Location = new Point(266, 393);
+            guna2HtmlLabel6.Location = new Point(264, 392);
             guna2HtmlLabel6.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             guna2HtmlLabel6.Size = new Size(93, 15);
@@ -361,7 +374,7 @@
             guna2HtmlLabel7.BackColor = Color.FromArgb(110, 177, 247);
             guna2HtmlLabel7.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel7.ForeColor = Color.FromArgb(13, 41, 80);
-            guna2HtmlLabel7.Location = new Point(78, 393);
+            guna2HtmlLabel7.Location = new Point(77, 392);
             guna2HtmlLabel7.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             guna2HtmlLabel7.Size = new Size(93, 15);
@@ -492,21 +505,21 @@
             guna2CustomGradientPanel2.BackColor = Color.Transparent;
             guna2CustomGradientPanel2.BorderRadius = 15;
             guna2CustomGradientPanel2.Controls.Add(EnterButton);
-            guna2CustomGradientPanel2.CustomizableEdges = customizableEdges36;
+            guna2CustomGradientPanel2.CustomizableEdges = customizableEdges39;
             guna2CustomGradientPanel2.FillColor = Color.FromArgb(53, 93, 134);
             guna2CustomGradientPanel2.FillColor2 = Color.FromArgb(53, 93, 134);
             guna2CustomGradientPanel2.FillColor3 = Color.FromArgb(53, 93, 134);
             guna2CustomGradientPanel2.FillColor4 = Color.FromArgb(53, 93, 134);
-            guna2CustomGradientPanel2.Location = new Point(388, 490);
+            guna2CustomGradientPanel2.Location = new Point(379, 491);
             guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges37;
-            guna2CustomGradientPanel2.Size = new Size(107, 44);
+            guna2CustomGradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            guna2CustomGradientPanel2.Size = new Size(181, 50);
             guna2CustomGradientPanel2.TabIndex = 93;
             // 
             // SexCombobox
             // 
             SexCombobox.BackColor = Color.Transparent;
-            SexCombobox.CustomizableEdges = customizableEdges34;
+            SexCombobox.CustomizableEdges = customizableEdges37;
             SexCombobox.DrawMode = DrawMode.OwnerDrawFixed;
             SexCombobox.DropDownStyle = ComboBoxStyle.DropDownList;
             SexCombobox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -515,9 +528,9 @@
             SexCombobox.ForeColor = Color.FromArgb(68, 88, 112);
             SexCombobox.ItemHeight = 30;
             SexCombobox.Items.AddRange(new object[] { "Male", "Female" });
-            SexCombobox.Location = new Point(536, 440);
+            SexCombobox.Location = new Point(536, 439);
             SexCombobox.Name = "SexCombobox";
-            SexCombobox.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            SexCombobox.ShadowDecoration.CustomizableEdges = customizableEdges38;
             SexCombobox.Size = new Size(104, 36);
             SexCombobox.TabIndex = 94;
             // 
@@ -533,101 +546,162 @@
             guna2HtmlLabel9.TabIndex = 95;
             guna2HtmlLabel9.Text = "_____________________________________________________________________";
             // 
-            // Mnicipality
+            // CityTxtbox
             // 
-            Mnicipality.BorderColor = Color.FromArgb(93, 202, 209);
-            Mnicipality.BorderRadius = 8;
-            Mnicipality.CustomizableEdges = customizableEdges26;
-            Mnicipality.DefaultText = "";
-            Mnicipality.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Mnicipality.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Mnicipality.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Mnicipality.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Mnicipality.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Mnicipality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Mnicipality.ForeColor = Color.FromArgb(47, 89, 114);
-            Mnicipality.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Mnicipality.Location = new Point(648, 341);
-            Mnicipality.Name = "Mnicipality";
-            Mnicipality.PasswordChar = '\0';
-            Mnicipality.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
-            Mnicipality.PlaceholderText = "City";
-            Mnicipality.SelectedText = "";
-            Mnicipality.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            Mnicipality.Size = new Size(177, 46);
-            Mnicipality.TabIndex = 99;
+            CityTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            CityTxtbox.BorderRadius = 8;
+            CityTxtbox.CustomizableEdges = customizableEdges29;
+            CityTxtbox.DefaultText = "";
+            CityTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            CityTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            CityTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            CityTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            CityTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            CityTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CityTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            CityTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            CityTxtbox.Location = new Point(718, 337);
+            CityTxtbox.Name = "CityTxtbox";
+            CityTxtbox.PasswordChar = '\0';
+            CityTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            CityTxtbox.PlaceholderText = "City";
+            CityTxtbox.SelectedText = "";
+            CityTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            CityTxtbox.Size = new Size(117, 46);
+            CityTxtbox.TabIndex = 99;
             // 
-            // guna2TextBox2
+            // BarangayTxtbox
             // 
-            guna2TextBox2.BorderColor = Color.FromArgb(93, 202, 209);
-            guna2TextBox2.BorderRadius = 8;
-            guna2TextBox2.CustomizableEdges = customizableEdges28;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox2.ForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(463, 341);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox2.PlaceholderText = "Barangay";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges29;
-            guna2TextBox2.Size = new Size(177, 46);
-            guna2TextBox2.TabIndex = 98;
+            BarangayTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            BarangayTxtbox.BorderRadius = 8;
+            BarangayTxtbox.CustomizableEdges = customizableEdges31;
+            BarangayTxtbox.DefaultText = "";
+            BarangayTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            BarangayTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            BarangayTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            BarangayTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            BarangayTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            BarangayTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            BarangayTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            BarangayTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            BarangayTxtbox.Location = new Point(583, 337);
+            BarangayTxtbox.Name = "BarangayTxtbox";
+            BarangayTxtbox.PasswordChar = '\0';
+            BarangayTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            BarangayTxtbox.PlaceholderText = "Barangay";
+            BarangayTxtbox.SelectedText = "";
+            BarangayTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            BarangayTxtbox.Size = new Size(118, 46);
+            BarangayTxtbox.TabIndex = 98;
             // 
-            // guna2TextBox3
+            // StreetTxtbox
             // 
-            guna2TextBox3.BorderColor = Color.FromArgb(93, 202, 209);
-            guna2TextBox3.BorderRadius = 8;
-            guna2TextBox3.CustomizableEdges = customizableEdges30;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.ForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(648, 286);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox3.PlaceholderText = "Street";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges31;
-            guna2TextBox3.Size = new Size(177, 46);
-            guna2TextBox3.TabIndex = 97;
+            StreetTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            StreetTxtbox.BorderRadius = 8;
+            StreetTxtbox.CustomizableEdges = customizableEdges33;
+            StreetTxtbox.DefaultText = "";
+            StreetTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            StreetTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            StreetTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            StreetTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            StreetTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            StreetTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            StreetTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            StreetTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            StreetTxtbox.Location = new Point(449, 340);
+            StreetTxtbox.Name = "StreetTxtbox";
+            StreetTxtbox.PasswordChar = '\0';
+            StreetTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            StreetTxtbox.PlaceholderText = "Street";
+            StreetTxtbox.SelectedText = "";
+            StreetTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            StreetTxtbox.Size = new Size(112, 46);
+            StreetTxtbox.TabIndex = 97;
             // 
-            // guna2TextBox4
+            // HouseNoTxtbox
             // 
-            guna2TextBox4.BorderColor = Color.FromArgb(93, 202, 209);
-            guna2TextBox4.BorderRadius = 8;
-            guna2TextBox4.CustomizableEdges = customizableEdges32;
-            guna2TextBox4.DefaultText = "";
-            guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox4.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox4.ForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox4.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Location = new Point(463, 286);
-            guna2TextBox4.Name = "guna2TextBox4";
-            guna2TextBox4.PasswordChar = '\0';
-            guna2TextBox4.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
-            guna2TextBox4.PlaceholderText = "House no/Building no";
-            guna2TextBox4.SelectedText = "";
-            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges33;
-            guna2TextBox4.Size = new Size(177, 46);
-            guna2TextBox4.TabIndex = 96;
+            HouseNoTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            HouseNoTxtbox.BorderRadius = 8;
+            HouseNoTxtbox.CustomizableEdges = customizableEdges35;
+            HouseNoTxtbox.DefaultText = "";
+            HouseNoTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            HouseNoTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            HouseNoTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            HouseNoTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            HouseNoTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            HouseNoTxtbox.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            HouseNoTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            HouseNoTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            HouseNoTxtbox.Location = new Point(448, 281);
+            HouseNoTxtbox.Margin = new Padding(2, 3, 2, 3);
+            HouseNoTxtbox.Name = "HouseNoTxtbox";
+            HouseNoTxtbox.PasswordChar = '\0';
+            HouseNoTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            HouseNoTxtbox.PlaceholderText = "House no/Building no";
+            HouseNoTxtbox.SelectedText = "";
+            HouseNoTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            HouseNoTxtbox.Size = new Size(118, 53);
+            HouseNoTxtbox.TabIndex = 96;
+            // 
+            // ZipCodeTxtbox
+            // 
+            ZipCodeTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            ZipCodeTxtbox.BorderRadius = 8;
+            ZipCodeTxtbox.CustomizableEdges = customizableEdges27;
+            ZipCodeTxtbox.DefaultText = "";
+            ZipCodeTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            ZipCodeTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            ZipCodeTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            ZipCodeTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            ZipCodeTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            ZipCodeTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ZipCodeTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            ZipCodeTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            ZipCodeTxtbox.Location = new Point(583, 285);
+            ZipCodeTxtbox.Name = "ZipCodeTxtbox";
+            ZipCodeTxtbox.PasswordChar = '\0';
+            ZipCodeTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            ZipCodeTxtbox.PlaceholderText = "Zip Code";
+            ZipCodeTxtbox.SelectedText = "";
+            ZipCodeTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            ZipCodeTxtbox.Size = new Size(117, 46);
+            ZipCodeTxtbox.TabIndex = 100;
+            // 
+            // ZoneTxtbox
+            // 
+            ZoneTxtbox.BorderColor = Color.FromArgb(93, 202, 209);
+            ZoneTxtbox.BorderRadius = 8;
+            ZoneTxtbox.CustomizableEdges = customizableEdges25;
+            ZoneTxtbox.DefaultText = "";
+            ZoneTxtbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            ZoneTxtbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            ZoneTxtbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            ZoneTxtbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            ZoneTxtbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            ZoneTxtbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ZoneTxtbox.ForeColor = Color.FromArgb(47, 89, 114);
+            ZoneTxtbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            ZoneTxtbox.Location = new Point(718, 285);
+            ZoneTxtbox.Name = "ZoneTxtbox";
+            ZoneTxtbox.PasswordChar = '\0';
+            ZoneTxtbox.PlaceholderForeColor = Color.FromArgb(47, 89, 114);
+            ZoneTxtbox.PlaceholderText = "Zone";
+            ZoneTxtbox.SelectedText = "";
+            ZoneTxtbox.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            ZoneTxtbox.Size = new Size(117, 46);
+            ZoneTxtbox.TabIndex = 101;
+            // 
+            // guna2HtmlLabel10
+            // 
+            guna2HtmlLabel10.BackColor = Color.FromArgb(110, 177, 247);
+            guna2HtmlLabel10.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel10.ForeColor = Color.FromArgb(13, 41, 80);
+            guna2HtmlLabel10.Location = new Point(448, 550);
+            guna2HtmlLabel10.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            guna2HtmlLabel10.Size = new Size(36, 31);
+            guna2HtmlLabel10.TabIndex = 102;
+            guna2HtmlLabel10.Text = "1/3";
             // 
             // MinimizeButton
             // 
@@ -652,13 +726,16 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(110, 177, 247);
-            ClientSize = new Size(894, 574);
+            ClientSize = new Size(894, 592);
             ControlBox = false;
             Controls.Add(MinimizeButton);
-            Controls.Add(Mnicipality);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox4);
+            Controls.Add(guna2HtmlLabel10);
+            Controls.Add(ZoneTxtbox);
+            Controls.Add(ZipCodeTxtbox);
+            Controls.Add(CityTxtbox);
+            Controls.Add(BarangayTxtbox);
+            Controls.Add(StreetTxtbox);
+            Controls.Add(HouseNoTxtbox);
             Controls.Add(guna2HtmlLabel9);
             Controls.Add(SexCombobox);
             Controls.Add(guna2CustomGradientPanel2);
@@ -717,11 +794,14 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2ComboBox SexCombobox;
-        private Guna.UI2.WinForms.Guna2TextBox Mnicipality;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox CityTxtbox;
+        private Guna.UI2.WinForms.Guna2TextBox BarangayTxtbox;
+        private Guna.UI2.WinForms.Guna2TextBox StreetTxtbox;
+        private Guna.UI2.WinForms.Guna2TextBox HouseNoTxtbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2ImageButton MinimizeButton;
+        private Guna.UI2.WinForms.Guna2TextBox ZoneTxtbox;
+        private Guna.UI2.WinForms.Guna2TextBox ZipCodeTxtbox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
     }
 }

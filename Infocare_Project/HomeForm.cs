@@ -29,11 +29,12 @@ namespace Infocare_Project
             this.Hide();
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+
+        private void AdminEnterButton_Click(object sender, EventArgs e)
         {
-            LandForm landForm = new LandForm();
-            landForm.Show();
-            this.Close();
+            AdminLogin adminLogin = new AdminLogin();
+            adminLogin.Show();
+            this.Hide();
         }
     }
 }
