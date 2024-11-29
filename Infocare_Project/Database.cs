@@ -29,22 +29,28 @@ namespace Infocare_Project
             {
                 try
                 {
-                    // SQL query to insert data into the patient info table
-                    string query = "INSERT INTO tb_patientinfo (p_FirstName, p_LastName, p_middlename, p_Suffix, p_Username, P_Password, P_ContactNumber, P_Bdate, P_Sex) " +
-                                   "VALUES (@FirstName, @LastName, @MiddleName, @Suffix, @Username, @Password, @ContactNumber, @Bdate, @Sex)";
+                    // SQL query to insert data into the patient info table, including Address
+                    string query = "INSERT INTO tb_patientinfo (p_FirstName, p_LastName, p_MiddleName, p_Suffix, p_Username, P_Password, P_ContactNumber, P_Bdate, P_Sex, Address) " +
+                                   "VALUES (@FirstName, @LastName, @MiddleName, @Suffix, @Username, @Password, @ContactNumber, @Bdate, @Sex, @Address)";
 
                     MySqlCommand command = new MySqlCommand(query, connection);
+
+                    // Add parameters for personal and account info
                     command.Parameters.AddWithValue("@FirstName", user.FirstName);
                     command.Parameters.AddWithValue("@LastName", user.LastName);
                     command.Parameters.AddWithValue("@MiddleName", user.MiddleName);
                     command.Parameters.AddWithValue("@Suffix", user.Suffix);
                     command.Parameters.AddWithValue("@Username", user.Username);
-                    command.Parameters.AddWithValue("@Password", user.Password); // You can change this to hashed password if needed
+                    command.Parameters.AddWithValue("@Password", user.Password); // Use hashed password if needed
                     command.Parameters.AddWithValue("@ContactNumber", user.ContactNumber);
 
-                    // Convert DateTime to MySQL date format (YYYY-MM-DD) if needed
-                    command.Parameters.AddWithValue("@Bdate", user.Bdate.ToString("MM-dd-yyyy"));  // Ensures correct format
+                    // Convert DateTime to MySQL date format (YYYY-MM-DD)
+                    command.Parameters.AddWithValue("@Bdate", user.Bdate.ToString("yyyy-MM-dd"));
                     command.Parameters.AddWithValue("@Sex", user.Sex);
+
+                    // Concatenate the address components
+                    string fullAddress = $"{user.HouseNo}, {user.Street}, {user.Barangay}, {user.City}";
+                    command.Parameters.AddWithValue("@Address", fullAddress);
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -56,6 +62,7 @@ namespace Infocare_Project
                 }
             }
         }
+
 
         public void PatientReg2(Patient patient, string username, double height, double weight, double bmi, string bloodType, string preCon, string treatment, string prevSurg)
         {
