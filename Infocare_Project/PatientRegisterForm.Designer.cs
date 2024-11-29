@@ -53,6 +53,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -62,6 +69,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientRegisterForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -694,6 +703,24 @@
             guna2HtmlLabel10.TabIndex = 102;
             guna2HtmlLabel10.Text = "1/3";
             // 
+            // MinimizeButton
+            // 
+            MinimizeButton.BackColor = Color.Silver;
+            MinimizeButton.CheckedState.ImageSize = new Size(64, 64);
+            MinimizeButton.Cursor = Cursors.Hand;
+            MinimizeButton.HoverState.ImageSize = new Size(20, 30);
+            MinimizeButton.Image = (Image)resources.GetObject("MinimizeButton.Image");
+            MinimizeButton.ImageOffset = new Point(0, 0);
+            MinimizeButton.ImageRotate = 0F;
+            MinimizeButton.ImageSize = new Size(20, 30);
+            MinimizeButton.Location = new Point(809, 0);
+            MinimizeButton.Margin = new Padding(3, 2, 3, 2);
+            MinimizeButton.Name = "MinimizeButton";
+            MinimizeButton.PressedState.ImageSize = new Size(20, 30);
+            MinimizeButton.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            MinimizeButton.Size = new Size(43, 26);
+            MinimizeButton.TabIndex = 160;
+            // 
             // PatientRegisterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -701,6 +728,7 @@
             BackColor = Color.FromArgb(110, 177, 247);
             ClientSize = new Size(894, 592);
             ControlBox = false;
+            Controls.Add(MinimizeButton);
             Controls.Add(guna2HtmlLabel10);
             Controls.Add(ZoneTxtbox);
             Controls.Add(ZipCodeTxtbox);
@@ -771,6 +799,7 @@
         private Guna.UI2.WinForms.Guna2TextBox StreetTxtbox;
         private Guna.UI2.WinForms.Guna2TextBox HouseNoTxtbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2ImageButton MinimizeButton;
         private Guna.UI2.WinForms.Guna2TextBox ZoneTxtbox;
         private Guna.UI2.WinForms.Guna2TextBox ZipCodeTxtbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;

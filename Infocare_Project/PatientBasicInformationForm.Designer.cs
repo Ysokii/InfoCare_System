@@ -53,8 +53,11 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientBasicInformationForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             WeightTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             HeightTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -75,6 +78,7 @@
             PreviousSurgeryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             NameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             BloodTypeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            MinimizeButton = new Guna.UI2.WinForms.Guna2ImageButton(); 
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             AlergyTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -659,6 +663,7 @@
             guna2Button1.TabIndex = 153;
             guna2Button1.Text = "X";
             guna2Button1.Click += guna2Button1_Click;
+>>>>>>> master
             // 
             // PatientBasicInformationForm
             // 
@@ -667,6 +672,7 @@
             BackColor = Color.FromArgb(110, 177, 247);
             ClientSize = new Size(894, 589);
             ControlBox = false;
+            Controls.Add(MinimizeButton);
             Controls.Add(guna2Button1);
             Controls.Add(guna2HtmlLabel22);
             Controls.Add(guna2HtmlLabel21);
@@ -731,6 +737,7 @@
         private Guna.UI2.WinForms.Guna2TextBox PreviousSurgeryTextBox;
         private Guna.UI2.WinForms.Guna2HtmlLabel NameLabel;
         private Guna.UI2.WinForms.Guna2ComboBox BloodTypeComboBox;
+        private Guna.UI2.WinForms.Guna2ImageButton MinimizeButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox AlergyTextbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;

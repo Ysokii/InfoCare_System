@@ -29,6 +29,7 @@ namespace Infocare_Project
             this.Hide();
         }
 
+
         private void AdminEnterButton_Click(object sender, EventArgs e)
         {
             AdminLogin adminLogin = new AdminLogin();
