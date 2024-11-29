@@ -30,6 +30,7 @@ namespace Infocare_Project
 
         private void EnterButton_Click(object sender, EventArgs e)
         {
+            // Create a new User object with all fields, including address components
             User newUser = new User
             {
                 FirstName = FirstnameTxtbox.Text,
@@ -41,9 +42,16 @@ namespace Infocare_Project
                 Username = UsernameTxtbox.Text,
                 Password = PasswordTxtbox.Text,
                 ConfirmPassword = ConfirmPasswordTxtbox.Text,
-                ContactNumber = ContactNumberTxtbox.Text
+                ContactNumber = ContactNumberTxtbox.Text,
+
+                // New Address Components
+                HouseNo = HouseNoTxtbox.Text,
+                Street = StreetTxtbox.Text,
+                Barangay = BarangayTxtbox.Text,
+                City = CityTxtbox.Text
             };
 
+            // Validate the password and confirm password match
             if (newUser.Password != newUser.ConfirmPassword)
             {
                 MessageBox.Show("Passwords do not match.");
@@ -52,18 +60,22 @@ namespace Infocare_Project
 
             try
             {
+                // Save the new user to the database
                 Database db = new Database();
                 db.PatientReg1(newUser);
 
                 MessageBox.Show("Registration successful!");
 
+                // Open the PatientBasicInformationForm and pass relevant data
                 var patientInfoForm = new PatientBasicInformationForm(newUser.Username, newUser.FirstName, newUser.LastName);
                 patientInfoForm.Show();
 
+                // Hide the current form
                 this.Hide();
             }
             catch (Exception ex)
             {
+                // Display error message
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
